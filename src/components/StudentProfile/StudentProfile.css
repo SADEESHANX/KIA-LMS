@@ -1,0 +1,383 @@
+.sprof-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+/* Header */
+.sprof-header {
+  margin-bottom: 2rem;
+}
+
+.sprof-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.sprof-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* Layout */
+.sprof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Cards */
+.sprof-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sprof-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Info Card */
+.sprof-profile-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.sprof-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 120px;
+}
+
+.sprof-photo-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  padding: 4px;
+}
+
+.sprof-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sprof-edit-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #0f172a; /* Navy */
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.sprof-change-photo-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.sprof-photo-desc {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.sprof-details-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sprof-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sprof-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.sprof-input-disabled {
+  background-color: #e2e8f0;
+  border: 1px solid var(--color-border);
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #475569;
+  cursor: not-allowed;
+}
+
+.sprof-form-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+
+.sprof-grade-val {
+  font-size: 0.875rem;
+  color: #1e293b;
+  margin-top: 0.25rem;
+}
+
+.sprof-btn-gradient {
+  background: linear-gradient(90deg, #0f172a 0%, #d97706 100%);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* Security Card */
+.sprof-input-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sprof-input {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  padding: 0.6rem 2.5rem 0.6rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #1e293b;
+  outline: none;
+}
+
+.sprof-input-icon {
+  position: absolute;
+  right: 0.75rem;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.sprof-strength-meter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.sprof-strength-bar {
+  flex: 1;
+  height: 4px;
+  background: linear-gradient(90deg, #ef4444 0%, #eab308 50%, #22c55e 100%);
+  border-radius: 2px;
+  position: relative;
+}
+
+.sprof-strength-dots {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.sprof-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  opacity: 0.3;
+}
+
+.sprof-strength-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #22c55e; /* Strong green */
+}
+
+/* Contact Details Card */
+.sprof-contact-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: #94a3b8;
+}
+
+.sprof-input-left-icon {
+  padding-left: 2.25rem;
+}
+
+.sprof-btn-navy {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sprof-contact-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.sprof-btn-blur {
+  background-color: #0f172a;
+  opacity: 0.5;
+  width: 100px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+/* Notification Preferences */
+.sprof-notif-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.sprof-toggles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sprof-toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.sprof-toggle-label-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sprof-toggle-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #0f172a;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sprof-toggle-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.sprof-switch {
+  width: 40px;
+  height: 20px;
+  background-color: #0f172a;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.sprof-switch.off { background-color: #cbd5e1; }
+
+.sprof-switch-knob {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.sprof-switch.off .sprof-switch-knob { left: 2px; right: auto; }
+
+.sprof-toggle-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+
+/* Account & Appearance */
+.sprof-theme-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sprof-theme-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+  max-width: 200px;
+}
+
+.sprof-theme-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sprof-theme-switch-wrap {
+  width: 60px;
+  height: 28px;
+  background-color: #0f172a;
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  color: white;
+}
+
+.sprof-theme-switch-knob {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+}
+
+.sprof-theme-labels {
+  font-size: 0.75rem;
+  color: #1e293b;
+}
+
+@media (max-width: 900px) {
+  .sprof-grid {
+    grid-template-columns: 1fr;
+  }
+}

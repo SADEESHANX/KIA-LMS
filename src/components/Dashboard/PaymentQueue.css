@@ -1,0 +1,21 @@
+.payment-queue {
+  margin-top: 1.5rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #fef0c7;
+  color: #b54708;
+  display: inline-block;
+}
+
+.thumbnail-placeholder {
+  width: 48px;
+  height: 32px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}

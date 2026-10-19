@@ -1,0 +1,279 @@
+.sph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+}
+
+/* Header */
+.sph-header {
+  margin-bottom: 0.5rem;
+}
+
+.sph-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.sph-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-main);
+}
+
+/* Summary Card */
+.sph-summary-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sph-summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.sph-summary-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.sph-summary-val {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.sph-summary-val.red { color: #ef4444; }
+.sph-summary-val.green { color: #22c55e; }
+
+.sph-summary-divider {
+  width: 2px;
+  height: 60px;
+  background-color: var(--color-border);
+}
+
+/* Ledger Table Card */
+.sph-table-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+}
+
+.sph-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.sph-table-container {
+  overflow-x: auto;
+}
+
+.sph-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sph-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1e293b;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.sph-table td {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.sph-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fw-500 { font-weight: 500; }
+.text-muted { color: var(--color-text-muted); }
+
+/* Status Pills */
+.sph-status-pill {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sph-status-pill.paid { background-color: #dcfce7; color: #166534; }
+.sph-status-pill.pending { background-color: #fef3c7; color: #b45309; }
+.sph-status-pill.overdue { background-color: #fee2e2; color: #ef4444; }
+
+/* Download Button */
+.sph-btn-download {
+  background: none;
+  border: none;
+  color: #d97706; /* Gold */
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.sph-btn-download:hover {
+  text-decoration: underline;
+}
+
+/* Modal Overlay */
+.sph-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.sph-modal {
+  background-color: white;
+  border-radius: 12px;
+  width: 550px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Modal Header */
+.sph-modal-header {
+  background-color: #0f172a; /* Navy */
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 4px solid #d97706; /* Gold Trim */
+}
+
+.sph-modal-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #d97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sph-logo-shield {
+  color: #d97706;
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+
+.sph-modal-title-text {
+  color: #d97706; /* Gold */
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Modal Body */
+.sph-modal-body {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 2rem;
+}
+
+/* Left Details */
+.sph-modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.sph-strong {
+  font-weight: 700;
+}
+
+.sph-amount-block {
+  margin: 0.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 1rem;
+}
+
+.sph-detail-grid {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 0.5rem 1rem;
+}
+
+/* Right QR Section */
+.sph-modal-qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid var(--color-border);
+  padding-left: 1.5rem;
+}
+
+.sph-qr-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.sph-qr-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.sph-qr-desc {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+
+@media (max-width: 640px) {
+  .sph-summary-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .sph-summary-divider {
+    width: 100%;
+    height: 1px;
+  }
+  .sph-modal-body {
+    grid-template-columns: 1fr;
+  }
+  .sph-modal-qr-section {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+}
